@@ -1,0 +1,16 @@
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\x64\Release\toastImageAndText.png
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\x64\Release\DesktopToastsSample.exe.config
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\x64\Release\DesktopToastsSample.exe
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\x64\Release\DesktopToastsSample.pdb
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\x64\Release\Microsoft.WindowsAPICodePack.xml
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\MainWindow.baml
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\MainWindow.g.cs
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\App.g.cs
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample_Content.g.cs
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample_MarkupCompile.cache
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample.g.resources
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample.Properties.Resources.resources
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample.exe
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\obj\x64\Release\DesktopToastsSample.pdb

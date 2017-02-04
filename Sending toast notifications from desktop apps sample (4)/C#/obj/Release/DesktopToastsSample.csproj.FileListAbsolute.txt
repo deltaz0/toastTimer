@@ -1,0 +1,1 @@
+C:\Users\Sam\Documents\toastNotifier\Sending toast notifications from desktop apps sample (4)\C#\bin\Release\DesktopToastsSample.exe.config

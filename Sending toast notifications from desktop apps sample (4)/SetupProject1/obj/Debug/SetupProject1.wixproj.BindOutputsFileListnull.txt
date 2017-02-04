@@ -1,0 +1,2 @@
+C:\Users\Sam\Downloads\Sending toast notifications from desktop apps sample (4)\SetupProject1\bin\Debug\SetupProject1.msi
+C:\Users\Sam\Downloads\Sending toast notifications from desktop apps sample (4)\SetupProject1\bin\Debug\SetupProject1.wixpdb
