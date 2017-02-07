@@ -87,7 +87,7 @@ namespace DesktopToastsSample
             
             using (PropVariant appId = new PropVariant(APP_ID))
             {
-                ShellHelpers.ErrorHelper.VerifySucceeded(newShortcutProperties.SetValue(null, appId));
+                //ShellHelpers.ErrorHelper.VerifySucceeded(newShortcutProperties.SetValue(null, appId));
                 ShellHelpers.ErrorHelper.VerifySucceeded(newShortcutProperties.Commit());
             }
 
@@ -136,7 +136,7 @@ namespace DesktopToastsSample
 
             TimeField.Text = string.Format("You've been using the computer for {0} seconds.\nThe computer has been idle for {1} seconds.", numSecs, timeSpent / 1000);
 
-            if(numSecs > 600000)
+            if(numSecs != 0 && numSecs % 3600 == 0)
             {
                 ShowToastButton_Click(null, null);
             }
