@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <!-- This XML file is meant to be used with the WiX toolkit for installing a shortcut with the right properties for toasts -->
-  <Product Id="a7e03305-aec7-4e0c-8e85-9e71ee0b64f4" Name="DesktopToastsSample" Language="1033" Version="1.0.0.0" Manufacturer="DesktopToastsSample" UpgradeCode="35d2a9d4-1e5f-448e-8ee8-a36ea24579aa">
+  <Product Id="*" Name="DesktopToastsSample" Language="1033" Version="1.0.0.0" Manufacturer="DesktopToastsSample" UpgradeCode="D091E144-3AF0-4B9A-A25E-2D52CF0DFB67">
+    <!-- a7e03305-aec7-4e0c-8e85-9e71ee0b64f4 35d2a9d4-1e5f-448e-8ee8-a36ea24579aa-->
     <Package InstallerVersion="200" Compressed="yes" />
 
     <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
@@ -9,13 +10,25 @@
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLLOCATION" Name="DesktopToastsSample">
+          <Component Id="MainExecutable" Guid="*">
+            <File Id="desktopToastsSample.exe" Name="DesktopToastsSample.exe" DiskId="1" Source="..\C#\bin\Release\DesktopToastsSample.exe" KeyPath="yes">
+            </File>
+          </Component>
+          <Component Id="MainIcon" Guid="*">
+            <File Id="main.ico" Name="Main.ico" DiskId="1" Source="..\C#\bin\Release\Main.ico" KeyPath="yes">
+            </File>
+          </Component>
+          <Component Id="PngAsset" Guid="*">
+            <File Id="toastimageandtext.png" Name="toastImageAndText.png" DiskId="1" Source="..\C#\bin\Release\toastImageAndText.png" KeyPath="yes">
+            </File>
+          </Component>
           <!-- Add the files here -->
         </Directory>
       </Directory>
 
       <Directory Id="ProgramMenuFolder">
         <!-- This creates a start menu shortcut -->
-        <Component Id="ApplicationShortcut" Guid="9F9C249C-A3AD-4765-804F-34BCD571359A">
+        <Component Id="ApplicationShortcut" Guid="*">
           <Shortcut Id="ApplicationStartMenuShortcut" Name="Desktop Toasts Sample" Description="Sends basic toasts" Target="[INSTALLLOCATION]DesktopToastsSample.exe" WorkingDirectory="INSTALLLOCATION">
             <!-- Set the AppID in order to get toasts to work -->
             <ShortcutProperty Key="System.AppUserModel.ID" Value="Microsoft.Samples.DesktopToastsSample"></ShortcutProperty>
@@ -26,9 +39,29 @@
       </Directory>
     </Directory>
 
+    <!--
+    <DirectoryRef Id="INSTALLLOCATION">
+      <Component Id="desktopToastsSample.exe" Guid="*">
+        <File Id="desktopToastsSample.exe" Source="..\C#\bin\x64\Release\DesktopToastsSample.exe" KeyPath="yes" Checksum="yes"/>
+      </Component>
+    </DirectoryRef>
+    -->
+
+    <!--
+    <Feature Id="MainApplication" Title="Main Application" Level="1">
+      <ComponentRef Id="desktopToastsSample.exe" />
+    </Feature>
+    -->
+    
     <Feature Id="ProductFeature" Title="DesktopToastsSample" Level="1">
       <ComponentRef Id="ApplicationShortcut"/>
       <!-- <ComponentGroupRef Id="Product.Generated" /> -->
+    </Feature>
+
+    <Feature Id='Complete' Level='1'>
+      <ComponentRef Id='MainExecutable' />
+      <ComponentRef Id='MainIcon' />
+      <ComponentRef Id='PngAsset'/>
     </Feature>
   </Product>
 </Wix>

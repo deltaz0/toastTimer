@@ -47,7 +47,7 @@ namespace DesktopToastsSample
                     this.WindowState = WindowState.Normal;
                 };
 
-            TryCreateShortcut();
+            //TryCreateShortcut();
             ShowToastButton.Click += ShowToastButton_Click;
 
             InitTimer();

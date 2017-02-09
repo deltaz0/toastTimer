@@ -1,0 +1,2 @@
+C:\Users\Sam\Documents\toastTimer\Sending toast notifications from desktop apps sample (4)\SetupProject1\bin\Release\SetupProject1.msi
+C:\Users\Sam\Documents\toastTimer\Sending toast notifications from desktop apps sample (4)\SetupProject1\bin\Release\SetupProject1.wixpdb

@@ -1,0 +1,3 @@
+..\C#\bin\Release\DesktopToastsSample.exe
+..\C#\bin\Release\Main.ico
+..\C#\bin\Release\toastImageAndText.png
