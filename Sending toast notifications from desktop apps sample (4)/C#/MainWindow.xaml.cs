@@ -49,6 +49,7 @@ namespace DesktopToastsSample
 
             //TryCreateShortcut();
             ShowToastButton.Click += ShowToastButton_Click;
+            Microsoft.Win32.SystemEvents.PowerModeChanged += OnPowerChange;
 
             InitTimer();
         }
@@ -61,6 +62,22 @@ namespace DesktopToastsSample
         //
         // Included in this project is a wxs file that be used with the WiX toolkit
         // to make an installer that creates the necessary shortcut. One or the other should be used.
+
+        private void OnPowerChange(Object sender, Microsoft.Win32.PowerModeChangedEventArgs e)
+        {
+            switch (e.Mode)
+            {
+                case Microsoft.Win32.PowerModes.Resume:
+                    TimeField.Text = string.Format("Resumed.");
+                    break;
+                case Microsoft.Win32.PowerModes.Suspend:
+                    TimeField.Text = string.Format("Suspended.");
+                    break;
+                default:
+                    break;
+            }
+        }
+        
         private bool TryCreateShortcut()
         {
             String shortcutPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Microsoft\\Windows\\Start Menu\\Programs\\Desktop Toasts Sample CS.lnk";
@@ -134,7 +151,7 @@ namespace DesktopToastsSample
             numSecs = numSecs + 10;
             uint timeSpent = GetIdleTime();
 
-            TimeField.Text = string.Format("You've been using the computer for {0} seconds.\nThe computer has been idle for {1} seconds.", numSecs, timeSpent / 1000);
+            //TimeField.Text = string.Format("You've been using the computer for {0} seconds.\nThe computer has been idle for {1} seconds.", numSecs, timeSpent / 1000);
 
             if(numSecs != 0 && numSecs % 3600 == 0)
             {
