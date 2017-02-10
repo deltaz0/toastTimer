@@ -15,11 +15,11 @@
             </File>
           </Component>
           <Component Id="MainIcon" Guid="*">
-            <File Id="main.ico" Name="Main.ico" DiskId="1" Source="..\C#\bin\Release\Main.ico" KeyPath="yes">
+            <File Id="samall.ico" Name="samall.ico" DiskId="1" Source="..\C#\bin\Release\samall.ico" KeyPath="yes">
             </File>
           </Component>
           <Component Id="PngAsset" Guid="*">
-            <File Id="toastimageandtext.png" Name="toastImageAndText.png" DiskId="1" Source="..\C#\bin\Release\toastImageAndText.png" KeyPath="yes">
+            <File Id="toastimageandtext2.png" Name="toastImageAndText2.png" DiskId="1" Source="..\C#\bin\Release\toastImageAndText2.png" KeyPath="yes">
             </File>
           </Component>
           <!-- Add the files here -->

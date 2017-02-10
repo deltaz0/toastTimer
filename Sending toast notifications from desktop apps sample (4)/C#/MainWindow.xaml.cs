@@ -38,7 +38,7 @@ namespace DesktopToastsSample
             InitializeComponent();
             numSecs = 0;
             NotifyIcon ni = new NotifyIcon();
-            ni.Icon = new System.Drawing.Icon("Main.ico");
+            ni.Icon = new System.Drawing.Icon("samall.ico");
             ni.Visible = true;
             ni.DoubleClick +=
                 delegate (object sender, EventArgs args)
@@ -194,7 +194,7 @@ namespace DesktopToastsSample
             }
 
             // Specify the absolute path to an image
-            String imagePath = "file:///" + Path.GetFullPath("toastImageAndText.png");
+            String imagePath = "file:///" + Path.GetFullPath("toastImageAndText2.png");
             XmlNodeList imageElements = toastXml.GetElementsByTagName("image");
             imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
 
